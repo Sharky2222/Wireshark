@@ -1,0 +1,27 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst WireShark.nios2e.cpu -pg 1
+preplace inst WireShark.nios2e.clock_bridge -pg 1
+preplace inst WireShark.eth_tse_0 -pg 1 -lvl 5 -y 50
+preplace inst WireShark.clk_0 -pg 1 -lvl 3 -y 210
+preplace inst WireShark.sgdma_rx -pg 1 -lvl 6 -y 440
+preplace inst WireShark.onchip_memory_nios -pg 1 -lvl 2 -y 650
+preplace inst WireShark.nios2e.reset_bridge -pg 1
+preplace inst WireShark -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst WireShark.eth_tse_0.i_tse_mac -pg 1
+preplace inst WireShark.nios2e -pg 1 -lvl 4 -y 290
+preplace inst WireShark.UART -pg 1 -lvl 5 -y 330
+preplace netloc EXPORT<net_container>WireShark</net_container>(SLAVE)WireShark.eth_tse_0_mac_rgmii_connection,(SLAVE)eth_tse_0.mac_rgmii_connection) 1 0 5 NJ 130 NJ 130 NJ 130 NJ 130 NJ
+preplace netloc EXPORT<net_container>WireShark</net_container>(SLAVE)WireShark.clk,(SLAVE)clk_0.clk_in) 1 0 3 NJ 220 NJ 220 NJ
+preplace netloc FAN_OUT<net_container>WireShark</net_container>(SLAVE)nios2e.clk,(SLAVE)onchip_memory_nios.clk1,(SLAVE)eth_tse_0.receive_clock_connection,(SLAVE)UART.clk,(SLAVE)sgdma_rx.clk,(SLAVE)eth_tse_0.transmit_clock_connection,(SLAVE)eth_tse_0.control_port_clock_connection,(MASTER)clk_0.clk) 1 1 5 250 760 NJ 760 1250 430 1810 450 NJ
+preplace netloc EXPORT<net_container>WireShark</net_container>(SLAVE)eth_tse_0.mac_status_connection,(SLAVE)WireShark.eth_tse_0_mac_status_connection) 1 0 5 NJ 320 NJ 320 NJ 320 NJ 190 NJ
+preplace netloc EXPORT<net_container>WireShark</net_container>(SLAVE)eth_tse_0.mac_mdio_connection,(SLAVE)WireShark.eth_tse_0_mac_mdio_connection) 1 0 5 NJ 300 NJ 300 NJ 300 NJ 170 NJ
+preplace netloc FAN_OUT<net_container>WireShark</net_container>(SLAVE)sgdma_rx.csr_irq,(MASTER)nios2e.irq,(SLAVE)UART.irq) 1 4 2 1710 490 NJ
+preplace netloc POINT_TO_POINT<net_container>WireShark</net_container>(SLAVE)clk_0.clk_in_reset,(MASTER)nios2e.debug_reset_request) 1 2 3 720 280 NJ 150 1670
+preplace netloc INTERCONNECT<net_container>WireShark</net_container>(SLAVE)eth_tse_0.control_port,(SLAVE)onchip_memory_nios.s1,(SLAVE)sgdma_rx.csr,(MASTER)sgdma_rx.m_write,(MASTER)nios2e.data_master,(MASTER)nios2e.instruction_master,(SLAVE)UART.avalon_jtag_slave,(SLAVE)nios2e.debug_mem_slave) 1 1 6 270 780 NJ 780 1310 450 1790 470 2170 570 2390
+preplace netloc EXPORT<net_container>WireShark</net_container>(SLAVE)WireShark.eth_tse_0_pcs_mac_tx_clock_connection,(SLAVE)eth_tse_0.pcs_mac_tx_clock_connection) 1 0 5 NJ 360 NJ 360 NJ 360 NJ 230 NJ
+preplace netloc POINT_TO_POINT<net_container>WireShark</net_container>(MASTER)eth_tse_0.receive,(SLAVE)sgdma_rx.in) 1 5 1 2150
+preplace netloc EXPORT<net_container>WireShark</net_container>(SLAVE)eth_tse_0.pcs_mac_rx_clock_connection,(SLAVE)WireShark.eth_tse_0_pcs_mac_rx_clock_connection) 1 0 5 NJ 340 NJ 340 NJ 340 NJ 210 NJ
+preplace netloc FAN_OUT<net_container>WireShark</net_container>(MASTER)clk_0.clk_reset,(SLAVE)onchip_memory_nios.reset1,(SLAVE)eth_tse_0.reset_connection,(SLAVE)sgdma_rx.reset,(SLAVE)nios2e.reset,(SLAVE)UART.reset) 1 1 5 290 740 NJ 740 1210 470 1770 530 NJ
+levelinfo -pg 1 0 200 2430
+levelinfo -hier WireShark 210 230 600 1000 1430 2010 2200 2410

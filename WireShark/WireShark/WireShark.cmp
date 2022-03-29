@@ -1,0 +1,20 @@
+	component WireShark is
+		port (
+			clk_clk                                   : in  std_logic                    := 'X';             -- clk
+			eth_tse_0_mac_mdio_connection_mdc         : out std_logic;                                       -- mdc
+			eth_tse_0_mac_mdio_connection_mdio_in     : in  std_logic                    := 'X';             -- mdio_in
+			eth_tse_0_mac_mdio_connection_mdio_out    : out std_logic;                                       -- mdio_out
+			eth_tse_0_mac_mdio_connection_mdio_oen    : out std_logic;                                       -- mdio_oen
+			eth_tse_0_mac_rgmii_connection_rgmii_in   : in  std_logic_vector(3 downto 0) := (others => 'X'); -- rgmii_in
+			eth_tse_0_mac_rgmii_connection_rgmii_out  : out std_logic_vector(3 downto 0);                    -- rgmii_out
+			eth_tse_0_mac_rgmii_connection_rx_control : in  std_logic                    := 'X';             -- rx_control
+			eth_tse_0_mac_rgmii_connection_tx_control : out std_logic;                                       -- tx_control
+			eth_tse_0_mac_status_connection_set_10    : in  std_logic                    := 'X';             -- set_10
+			eth_tse_0_mac_status_connection_set_1000  : in  std_logic                    := 'X';             -- set_1000
+			eth_tse_0_mac_status_connection_eth_mode  : out std_logic;                                       -- eth_mode
+			eth_tse_0_mac_status_connection_ena_10    : out std_logic;                                       -- ena_10
+			eth_tse_0_pcs_mac_rx_clock_connection_clk : in  std_logic                    := 'X';             -- clk
+			eth_tse_0_pcs_mac_tx_clock_connection_clk : in  std_logic                    := 'X'              -- clk
+		);
+	end component WireShark;
+
