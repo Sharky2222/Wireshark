@@ -3,14 +3,14 @@
  <debug showDebugMenu="0" />
  <systemtable filter="All Interfaces">
   <columns>
-   <connections preferredWidth="271" />
-   <irq preferredWidth="34" />
+   <connections preferredWidth="319" />
+   <irq preferredWidth="79" />
    <name preferredWidth="202" />
   </columns>
  </systemtable>
  <library
-   expandedCategories="Library/Basic Functions,Project,Library/Basic Functions/On Chip Memory,Library" />
- <window width="1936" height="1048" x="-1928" y="-8" />
+   expandedCategories="Library,Library/DSP/Video and Image Processing,Library/Interface Protocols/PCI Express,Library/Processors and Peripherals,Library/Qsys Interconnect,Library/DSP,Library/Interface Protocols,Library/Interface Protocols/PCI Express/Example Design Components,Library/Qsys Interconnect/Memory-Mapped Alpha,Library/University Program/Audio &amp; Video/Video,Library/Processors and Peripherals/Peripherals,Library/Interface Protocols/Serial,Library/University Program/Audio &amp; Video,Library/Qsys Interconnect/Memory-Mapped,Project,Library/University Program" />
+ <window width="1936" height="1048" x="-8" y="-8" />
  <generation synthesis="VHDL" block_symbol_file="0" path="_PROJECT_NAME_" />
  <hdlexample language="VHDL" />
 </preferences>

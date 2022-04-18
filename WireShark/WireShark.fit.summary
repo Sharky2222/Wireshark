@@ -1,0 +1,20 @@
+Fitter Status : Successful - Fri Apr 15 21:25:21 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : WireShark
+Top-level Entity Name : WireShark
+Family : Cyclone V
+Device : 5CSXFC6D6F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 3,232 / 41,910 ( 8 % )
+Total registers : 6672
+Total pins : 130 / 499 ( 26 % )
+Total virtual pins : 0
+Total block memory bits : 328,040 / 5,662,720 ( 6 % )
+Total RAM Blocks : 58 / 553 ( 10 % )
+Total DSP Blocks : 0 / 112 ( 0 % )
+Total HSSI RX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
+Total HSSI TX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 9 ( 0 % )
+Total PLLs : 1 / 15 ( 7 % )
+Total DLLs : 0 / 4 ( 0 % )

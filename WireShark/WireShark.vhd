@@ -25,14 +25,6 @@ port
 	------------ LED ------------
 	LEDR            	:out   	std_logic_vector(9 downto 0);
 
-	------------ Seg7 ------------
-	HEX0            	:out   	std_logic_vector(6 downto 0);
-	HEX1            	:out   	std_logic_vector(6 downto 0);
-	HEX2            	:out   	std_logic_vector(6 downto 0);
-	HEX3            	:out   	std_logic_vector(6 downto 0);
-	HEX4            	:out   	std_logic_vector(6 downto 0);
-	HEX5            	:out   	std_logic_vector(6 downto 0);
-
 	------------ SDRAM ------------
 	DRAM_ADDR       	:out   	std_logic_vector(12 downto 0);
 	DRAM_BA         	:out   	std_logic_vector(1 downto 0);
@@ -46,65 +38,26 @@ port
 	DRAM_UDQM       	:out   	std_logic;
 	DRAM_WE_N       	:out   	std_logic;
 
-	------------ Video-In ------------
-	TD_CLK27        	:in    	std_logic;
-	TD_DATA         	:in    	std_logic_vector(7 downto 0);
-	TD_HS           	:in    	std_logic;
-	TD_RESET_N      	:out   	std_logic;
-	TD_VS           	:in    	std_logic;
-
-	------------ VGA ------------
-	VGA_BLANK_N     	:out   	std_logic;
-	VGA_B           	:out   	std_logic_vector(7 downto 0);
-	VGA_CLK         	:out   	std_logic;
-	VGA_G           	:out   	std_logic_vector(7 downto 0);
-	VGA_HS          	:out   	std_logic;
-	VGA_R           	:out   	std_logic_vector(7 downto 0);
-	VGA_SYNC_N      	:out   	std_logic;
-	VGA_VS          	:out   	std_logic;
-
-	------------ Audio ------------
-	AUD_ADCDAT      	:in    	std_logic;
-	AUD_ADCLRCK     	:inout 	std_logic;
-	AUD_BCLK        	:inout 	std_logic;
-	AUD_DACDAT      	:out   	std_logic;
-	AUD_DACLRCK     	:inout 	std_logic;
-	AUD_XCK         	:out   	std_logic;
-
-	------------ PS2 ------------
-	PS2_CLK         	:inout 	std_logic;
-	PS2_CLK2        	:inout 	std_logic;
-	PS2_DAT         	:inout 	std_logic;
-	PS2_DAT2        	:inout 	std_logic;
-
-	------------ ADC ------------
-	ADC_CONVST      	:out   	std_logic;
-	ADC_DIN         	:out   	std_logic;
-	ADC_DOUT        	:in    	std_logic;
-	ADC_SCLK        	:out   	std_logic;
-
-	------------ I2C for Audio and Video-In ------------
-	FPGA_I2C_SCLK   	:out   	std_logic;
-	FPGA_I2C_SDAT   	:inout 	std_logic;
-
 	------------ HPS ------------
-	HPS_CONV_USB_N  	:inout 	std_logic;
-	HPS_DDR3_ADDR   	:out   	std_logic_vector(14 downto 0);
-	HPS_DDR3_BA     	:out   	std_logic_vector(2 downto 0);
-	HPS_DDR3_CAS_N  	:out   	std_logic;
-	HPS_DDR3_CKE    	:out   	std_logic;
-	HPS_DDR3_CK_N   	:out   	std_logic;
-	HPS_DDR3_CK_P   	:out   	std_logic;
-	HPS_DDR3_CS_N   	:out   	std_logic;
-	HPS_DDR3_DM     	:out   	std_logic_vector(3 downto 0);
-	HPS_DDR3_DQ     	:inout 	std_logic_vector(31 downto 0);
-	HPS_DDR3_DQS_N  	:inout 	std_logic_vector(3 downto 0);
-	HPS_DDR3_DQS_P  	:inout 	std_logic_vector(3 downto 0);
-	HPS_DDR3_ODT    	:out   	std_logic;
-	HPS_DDR3_RAS_N  	:out   	std_logic;
-	HPS_DDR3_RESET_N	:out   	std_logic;
-	HPS_DDR3_RZQ    	:in    	std_logic;
-	HPS_DDR3_WE_N   	:out   	std_logic;
+--	HPS_CONV_USB_N  	:inout 	std_logic;
+--	HPS_DDR3_ADDR   	:out   	std_logic_vector(14 downto 0);
+--	HPS_DDR3_BA     	:out   	std_logic_vector(2 downto 0);
+--	HPS_DDR3_CAS_N  	:out   	std_logic;
+--	HPS_DDR3_CKE    	:out   	std_logic;
+--	HPS_DDR3_CK_N   	:out   	std_logic;
+--	HPS_DDR3_CK_P   	:out   	std_logic;
+--	HPS_DDR3_CS_N   	:out   	std_logic;
+--	HPS_DDR3_DM     	:out   	std_logic_vector(3 downto 0);
+--	HPS_DDR3_DQ     	:inout 	std_logic_vector(31 downto 0);
+--	HPS_DDR3_DQS_N  	:inout 	std_logic_vector(3 downto 0);
+--	HPS_DDR3_DQS_P  	:inout 	std_logic_vector(3 downto 0);
+--	HPS_DDR3_ODT    	:out   	std_logic;
+--	HPS_DDR3_RAS_N  	:out   	std_logic;
+--	HPS_DDR3_RESET_N	:out   	std_logic;
+--	HPS_DDR3_RZQ    	:in    	std_logic;
+--	HPS_DDR3_WE_N   	:out   	std_logic;
+	
+	--Ethernet Ports
 	HPS_ENET_GTX_CLK	:out   	std_logic;
 	HPS_ENET_INT_N  	:inout 	std_logic;
 	HPS_ENET_MDC    	:out   	std_logic;
@@ -114,6 +67,8 @@ port
 	HPS_ENET_RX_DV  	:in    	std_logic;
 	HPS_ENET_TX_DATA	:out   	std_logic_vector(3 downto 0);
 	HPS_ENET_TX_EN  	:out   	std_logic;
+	
+	
 	HPS_FLASH_DATA  	:inout 	std_logic_vector(3 downto 0);
 	HPS_FLASH_DCLK  	:out   	std_logic;
 	HPS_FLASH_NCSO  	:out   	std_logic;
@@ -165,9 +120,14 @@ end entity;
 architecture rtl of WireShark is
 
 -- declare --
+signal CONNECTED_TO_eth_tse_0_mac_status_connection_eth_mode : std_logic;
+signal CONNECTED_TO_eth_tse_0_mac_status_connection_ena_10 : std_logic;
+signal mdio_in : std_logic;
+signal mdio_oen : std_logic;
+signal mdio_out : std_logic;
 
-component WireShark is
-    port (
+      component Wire_Shark is
+        port (
             clk_clk                                   : in  std_logic                    := 'X';             -- clk
             eth_tse_0_mac_mdio_connection_mdc         : out std_logic;                                       -- mdc
             eth_tse_0_mac_mdio_connection_mdio_in     : in  std_logic                    := 'X';             -- mdio_in
@@ -181,31 +141,32 @@ component WireShark is
             eth_tse_0_mac_status_connection_set_1000  : in  std_logic                    := 'X';             -- set_1000
             eth_tse_0_mac_status_connection_eth_mode  : out std_logic;                                       -- eth_mode
             eth_tse_0_mac_status_connection_ena_10    : out std_logic;                                       -- ena_10
-            eth_tse_0_pcs_mac_rx_clock_connection_clk : in  std_logic                    := 'X';             -- clk
-            eth_tse_0_pcs_mac_tx_clock_connection_clk : in  std_logic                    := 'X'              -- clk
+            eth_tse_0_pcs_mac_rx_clock_connection_clk : in  std_logic                    := 'X'              -- clk
         );
-    end component WireShark;
+    end component Wire_Shark;
 
 begin
-
 -- body --
-  u0 : component WireShark
+   --Tri state buffer
+	mdio_in <= HPS_ENET_MDIO;
+	mdio_out <= mdio_out when (mdio_oen = '0') else 'Z';
+	
+   u0 : component Wire_Shark
         port map (
-            clk_clk                                   => CONNECTED_TO_clk_clk,                                   --                                   clk.clk
-            eth_tse_0_mac_mdio_connection_mdc         => CONNECTED_TO_eth_tse_0_mac_mdio_connection_mdc,         --         eth_tse_0_mac_mdio_connection.mdc
-            eth_tse_0_mac_mdio_connection_mdio_in     => CONNECTED_TO_eth_tse_0_mac_mdio_connection_mdio_in,     --                                      .mdio_in
-            eth_tse_0_mac_mdio_connection_mdio_out    => CONNECTED_TO_eth_tse_0_mac_mdio_connection_mdio_out,    --                                      .mdio_out
-            eth_tse_0_mac_mdio_connection_mdio_oen    => CONNECTED_TO_eth_tse_0_mac_mdio_connection_mdio_oen,    --                                      .mdio_oen
-            eth_tse_0_mac_rgmii_connection_rgmii_in   => CONNECTED_TO_eth_tse_0_mac_rgmii_connection_rgmii_in,   --        eth_tse_0_mac_rgmii_connection.rgmii_in
-            eth_tse_0_mac_rgmii_connection_rgmii_out  => CONNECTED_TO_eth_tse_0_mac_rgmii_connection_rgmii_out,  --                                      .rgmii_out
-            eth_tse_0_mac_rgmii_connection_rx_control => CONNECTED_TO_eth_tse_0_mac_rgmii_connection_rx_control, --                                      .rx_control
-            eth_tse_0_mac_rgmii_connection_tx_control => CONNECTED_TO_eth_tse_0_mac_rgmii_connection_tx_control, --                                      .tx_control
-            eth_tse_0_mac_status_connection_set_10    => CONNECTED_TO_eth_tse_0_mac_status_connection_set_10,    --       eth_tse_0_mac_status_connection.set_10
-            eth_tse_0_mac_status_connection_set_1000  => CONNECTED_TO_eth_tse_0_mac_status_connection_set_1000,  --                                      .set_1000
+            clk_clk                                   => CLOCK2_50,                                   --                                   clk.clk
+            eth_tse_0_mac_mdio_connection_mdc         => HPS_ENET_MDC,         --         eth_tse_0_mac_mdio_connection.mdc
+            eth_tse_0_mac_mdio_connection_mdio_in     => mdio_in,     --                                      .mdio_in
+            eth_tse_0_mac_mdio_connection_mdio_out    => mdio_out,    --                                      .mdio_out
+            eth_tse_0_mac_mdio_connection_mdio_oen    => mdio_oen,    --                                      .mdio_oen
+            eth_tse_0_mac_rgmii_connection_rgmii_in   => HPS_ENET_RX_DATA,   --        eth_tse_0_mac_rgmii_connection.rgmii_in
+            eth_tse_0_mac_rgmii_connection_rgmii_out  => HPS_ENET_TX_DATA,  --                                      .rgmii_out
+            eth_tse_0_mac_rgmii_connection_rx_control => HPS_ENET_RX_DV, --                                      .rx_control
+            eth_tse_0_mac_rgmii_connection_tx_control => HPS_ENET_TX_EN, --                                      .tx_control
+            eth_tse_0_mac_status_connection_set_10    => '0',    --       eth_tse_0_mac_status_connection.set_10
+            eth_tse_0_mac_status_connection_set_1000  => '1',  --                                      .set_1000
             eth_tse_0_mac_status_connection_eth_mode  => CONNECTED_TO_eth_tse_0_mac_status_connection_eth_mode,  --                                      .eth_mode
             eth_tse_0_mac_status_connection_ena_10    => CONNECTED_TO_eth_tse_0_mac_status_connection_ena_10,    --                                      .ena_10
-            eth_tse_0_pcs_mac_rx_clock_connection_clk => CONNECTED_TO_eth_tse_0_pcs_mac_rx_clock_connection_clk, -- eth_tse_0_pcs_mac_rx_clock_connection.clk
-            eth_tse_0_pcs_mac_tx_clock_connection_clk => CONNECTED_TO_eth_tse_0_pcs_mac_tx_clock_connection_clk  -- eth_tse_0_pcs_mac_tx_clock_connection.clk
+            eth_tse_0_pcs_mac_rx_clock_connection_clk => HPS_ENET_RX_CLK -- eth_tse_0_pcs_mac_rx_clock_connection.clk
         );
 
 

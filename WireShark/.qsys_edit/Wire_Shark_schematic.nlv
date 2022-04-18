@@ -1,0 +1,31 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst Wire_Shark.pll_0 -pg 1 -lvl 1 -y 610
+preplace inst Wire_Shark.onchip_memory_nios -pg 1 -lvl 6 -y 430
+preplace inst Wire_Shark.nios2e.cpu -pg 1
+preplace inst Wire_Shark.nios2e -pg 1 -lvl 4 -y 210
+preplace inst Wire_Shark.SGDMA_TX -pg 1 -lvl 6 -y 80
+preplace inst Wire_Shark.UART -pg 1 -lvl 6 -y 190
+preplace inst Wire_Shark -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst Wire_Shark.TSE_MAC.i_tse_mac -pg 1
+preplace inst Wire_Shark.SGDMA_RX -pg 1 -lvl 8 -y 190
+preplace inst Wire_Shark.nios2e.reset_bridge -pg 1
+preplace inst Wire_Shark.clk_0 -pg 1 -lvl 5 -y 350
+preplace inst Wire_Shark.descriptor_memory -pg 1 -lvl 6 -y 520
+preplace inst Wire_Shark.Filter_0 -pg 1 -lvl 9 -y 30
+preplace inst Wire_Shark.nios2e.clock_bridge -pg 1
+preplace inst Wire_Shark.TSE_MAC -pg 1 -lvl 7 -y 380
+preplace netloc EXPORT<net_container>Wire_Shark</net_container>(SLAVE)clk_0.clk_in,(SLAVE)Wire_Shark.clk) 1 0 5 NJ 500 NJ 360 NJ 360 NJ 360 NJ
+preplace netloc INTERCONNECT<net_container>Wire_Shark</net_container>(SLAVE)SGDMA_RX.reset,(SLAVE)nios2e.reset,(SLAVE)UART.reset,(MASTER)clk_0.clk_reset,(SLAVE)TSE_MAC.reset_connection,(SLAVE)clk_0.clk_in_reset,(MASTER)nios2e.debug_reset_request,(SLAVE)descriptor_memory.reset1,(SLAVE)SGDMA_TX.reset,(SLAVE)pll_0.reset,(SLAVE)Filter_0.reset_sink,(SLAVE)onchip_memory_nios.reset1) 1 0 9 250 600 NJ 600 NJ 600 1100 380 1670 260 2010 380 2280 660 2810 100 NJ
+preplace netloc EXPORT<net_container>Wire_Shark</net_container>(SLAVE)Wire_Shark.eth_tse_0_mac_status_connection,(SLAVE)TSE_MAC.mac_status_connection) 1 0 7 NJ 420 NJ 420 NJ 420 NJ 420 NJ 420 NJ 300 NJ
+preplace netloc FAN_OUT<net_container>Wire_Shark</net_container>(MASTER)clk_0.clk,(SLAVE)nios2e.clk,(SLAVE)UART.clk,(SLAVE)SGDMA_RX.clk,(SLAVE)TSE_MAC.transmit_clock_connection,(SLAVE)onchip_memory_nios.clk1,(SLAVE)TSE_MAC.control_port_clock_connection,(SLAVE)descriptor_memory.clk1,(SLAVE)pll_0.refclk,(SLAVE)SGDMA_TX.clk,(SLAVE)Filter_0.clock_sink,(SLAVE)TSE_MAC.receive_clock_connection) 1 0 9 230 580 NJ 580 NJ 580 1080 150 NJ 150 1990 360 2380 340 2750 80 NJ
+preplace netloc POINT_TO_POINT<net_container>Wire_Shark</net_container>(MASTER)SGDMA_TX.out,(SLAVE)Filter_0.avalon_streaming_sink) 1 6 3 NJ 150 NJ 150 3070
+preplace netloc FAN_OUT<net_container>Wire_Shark</net_container>(SLAVE)SGDMA_TX.csr_irq,(SLAVE)SGDMA_RX.csr_irq,(MASTER)nios2e.irq,(SLAVE)UART.irq) 1 4 4 NJ 300 1930 50 NJ 110 2770
+preplace netloc EXPORT<net_container>Wire_Shark</net_container>(SLAVE)Wire_Shark.eth_tse_0_mac_mdio_connection,(SLAVE)TSE_MAC.mac_mdio_connection) 1 0 7 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 400 NJ
+preplace netloc EXPORT<net_container>Wire_Shark</net_container>(SLAVE)Wire_Shark.eth_tse_0_pcs_mac_rx_clock_connection,(SLAVE)TSE_MAC.pcs_mac_rx_clock_connection) 1 0 7 NJ 440 NJ 440 NJ 440 NJ 440 NJ 440 NJ 320 NJ
+preplace netloc EXPORT<net_container>Wire_Shark</net_container>(SLAVE)Wire_Shark.eth_tse_0_mac_rgmii_connection,(SLAVE)TSE_MAC.mac_rgmii_connection) 1 0 7 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 NJ 70 NJ
+preplace netloc INTERCONNECT<net_container>Wire_Shark</net_container>(SLAVE)descriptor_memory.s1,(MASTER)SGDMA_TX.m_read,(MASTER)nios2e.data_master,(MASTER)SGDMA_RX.descriptor_read,(MASTER)SGDMA_RX.m_write,(SLAVE)Filter_0.avalon_slave_0,(SLAVE)nios2e.debug_mem_slave,(MASTER)SGDMA_TX.descriptor_write,(SLAVE)TSE_MAC.control_port,(MASTER)SGDMA_RX.descriptor_write,(MASTER)nios2e.instruction_master,(SLAVE)SGDMA_TX.csr,(MASTER)SGDMA_TX.descriptor_read,(SLAVE)SGDMA_RX.csr,(SLAVE)UART.avalon_jtag_slave,(SLAVE)onchip_memory_nios.s1) 1 3 6 1100 170 1650 240 1910 340 2360 130 2790 60 3050
+preplace netloc POINT_TO_POINT<net_container>Wire_Shark</net_container>(MASTER)pll_0.outclk0,(SLAVE)TSE_MAC.pcs_mac_tx_clock_connection) 1 1 6 NJ 640 NJ 640 NJ 640 NJ 640 NJ 420 2260
+preplace netloc POINT_TO_POINT<net_container>Wire_Shark</net_container>(MASTER)TSE_MAC.receive,(SLAVE)SGDMA_RX.in) 1 7 1 2830
+levelinfo -pg 1 0 200 3270
+levelinfo -hier Wire_Shark 210 280 820 1060 1410 1720 2100 2620 2860 3100 3260

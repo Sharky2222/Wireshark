@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "HPS_ENET_MDC",
+					"strict" : false
+				},
+				{
+					"name" : "HPS_ENET_MDIO",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK2_50",
+					"strict" : false
+				},
+				{
+					"name" : "HPS_ENET_RX_CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

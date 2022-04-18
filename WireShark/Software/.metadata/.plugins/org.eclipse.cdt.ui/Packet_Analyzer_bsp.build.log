@@ -1,0 +1,6 @@
+18:01:43 **** Clean-only build of configuration Nios II for project Packet_Analyzer_bsp ****
+make clean 
+[BSP clean complete]
+
+18:01:44 Build Finished (took 560ms)
+
