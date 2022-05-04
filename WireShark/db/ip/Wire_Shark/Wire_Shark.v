@@ -26,7 +26,7 @@ module Wire_Shark (
 	wire         sgdma_tx_out_endofpacket;                             // SGDMA_TX:out_endofpacket -> TSE_MAC:ff_tx_eop
 	wire         sgdma_tx_out_error;                                   // SGDMA_TX:out_error -> TSE_MAC:ff_tx_err
 	wire   [1:0] sgdma_tx_out_empty;                                   // SGDMA_TX:out_empty -> TSE_MAC:ff_tx_mod
-	wire         pll_0_outclk0_clk;                                    // pll_0:outclk_0 -> [TSE_MAC:rx_clk, TSE_MAC:tx_clk]
+	wire         pll_0_outclk0_clk;                                    // pll_0:outclk_0 -> TSE_MAC:tx_clk
 	wire         nios2e_debug_reset_request_reset;                     // nios2e:debug_reset_request -> [pll_0:rst, rst_controller:reset_in0, rst_controller:reset_in1, rst_controller_001:reset_in0]
 	wire  [31:0] nios2e_data_master_readdata;                          // mm_interconnect_0:nios2e_data_master_readdata -> nios2e:d_readdata
 	wire         nios2e_data_master_waitrequest;                       // mm_interconnect_0:nios2e_data_master_waitrequest -> nios2e:d_waitrequest
@@ -255,7 +255,7 @@ module Wire_Shark (
 		.reg_wr        (mm_interconnect_0_tse_mac_control_port_write),       //                              .write
 		.reg_busy      (mm_interconnect_0_tse_mac_control_port_waitrequest), //                              .waitrequest
 		.tx_clk        (pll_0_outclk0_clk),                                  //   pcs_mac_tx_clock_connection.clk
-		.rx_clk        (pll_0_outclk0_clk),                                  //   pcs_mac_rx_clock_connection.clk
+		.rx_clk        (clk_clk),                                            //   pcs_mac_rx_clock_connection.clk
 		.set_10        (eth_tse_0_mac_status_connection_set_10),             //         mac_status_connection.set_10
 		.set_1000      (eth_tse_0_mac_status_connection_set_1000),           //                              .set_1000
 		.eth_mode      (eth_tse_0_mac_status_connection_eth_mode),           //                              .eth_mode

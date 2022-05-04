@@ -1,0 +1,20 @@
+19:34:42 **** Build of configuration Nios II for project niosii_simple_socket_server_bsp ****
+make all 
+Compiling alt_alarm_start.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./drivers/inc -I./drivers/inc/iniche -I./iniche/inc -I./iniche/src/h -I./iniche/src/h/nios2 -I./iniche/src/nios2 -I./UCOSII/inc -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALTERA_TRIPLE_SPEED_MAC -DALT_INICHE -D__ucosii__ -DALTERA_AUTONEG_TIMEOUT_THRESHOLD=2500 -DALTERA_CHECKLINK_TIMEOUT_THRESHOLD=10000 -DALTERA_NOMDIO_TIMEOUT_THRESHOLD=1000000  -DTSE_MY_SYSTEM  -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
+Compiling alt_busy_sleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./drivers/inc -I./drivers/inc/iniche -I./iniche/inc -I./iniche/src/h -I./iniche/src/h/nios2 -I./iniche/src/nios2 -I./UCOSII/inc -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALTERA_TRIPLE_SPEED_MAC -DALT_INICHE -D__ucosii__ -DALTERA_AUTONEG_TIMEOUT_THRESHOLD=2500 -DALTERA_CHECKLINK_TIMEOUT_THRESHOLD=10000 -DALTERA_NOMDIO_TIMEOUT_THRESHOLD=1000000  -DTSE_MY_SYSTEM  -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
+Compiling alt_close.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./drivers/inc -I./drivers/inc/iniche -I./iniche/inc -I./iniche/src/h -I./iniche/src/h/nios2 -I./iniche/src/nios2 -I./UCOSII/inc -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALTERA_TRIPLE_SPEED_MAC -DALT_INICHE -D__ucosii__ -DALTERA_AUTONEG_TIMEOUT_THRESHOLD=2500 -DALTERA_CHECKLINK_TIMEOUT_THRESHOLD=10000 -DALTERA_NOMDIO_TIMEOUT_THRESHOLD=1000000  -DTSE_MY_SYSTEM  -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
+In file included from ./HAL/inc/includes.h:23:0,
+                 from ./UCOSII/inc/priv/alt_sem_ucosii.h:45,
+                 from ./UCOSII/inc/os/alt_sem.h:75,
+                 from ./HAL/inc/priv/alt_file.h:44,
+                 from HAL/src/alt_close.c:37:
+./UCOSII/inc/ucos_ii.h:1708:2: error: #error "OS_CFG.H, Missing OS_TICKS_PER_SEC: Sets the number of ticks in one second"
+ #error  "OS_CFG.H, Missing OS_TICKS_PER_SEC: Sets the number of ticks in one second"
+  ^
+make: *** [obj/HAL/src/alt_close.o] Error 1
+
+19:34:44 Build Finished (took 1s.863ms)
+

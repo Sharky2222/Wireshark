@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2022.04.18.17:46:07</td>
+    <td class="l">2022.04.29.15:20:07</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -1111,13 +1111,19 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
      </tr>
      <tr>
-      <td class="neighbor" rowspan="8">
+      <td class="neighbor" rowspan="10">
        <a href="#module_clk_0">clk_0</a>
       </td>
       <td class="from">clk&#160;&#160;</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;control_port_clock_connection</td>
+     </tr>
+     <tr>
+      <td class="from">clk&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;pcs_mac_rx_clock_connection</td>
      </tr>
      <tr>
       <td class="from">clk&#160;&#160;</td>
@@ -1141,15 +1147,9 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
      </tr>
      <tr>
-      <td class="neighbor" rowspan="4">
+      <td class="neighbor" rowspan="2">
        <a href="#module_pll_0">pll_0</a>
       </td>
-      <td class="from">outclk0&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;pcs_mac_rx_clock_connection</td>
-     </tr>
-     <tr>
       <td class="from">outclk0&#160;&#160;</td>
      </tr>
      <tr>
@@ -1665,7 +1665,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_nios2e">nios2e</a>
       </td>
       <td class="from">debug_reset_request&#160;&#160;</td>
-      <td class="main" rowspan="55">clk_0</td>
+      <td class="main" rowspan="57">clk_0</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clk_in_reset</td>
@@ -1882,7 +1882,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="from">clk&#160;&#160;</td>
-      <td class="neighbor" rowspan="8">
+      <td class="neighbor" rowspan="10">
        <a href="#module_TSE_MAC">TSE_MAC</a>
       </td>
      </tr>
@@ -1890,6 +1890,16 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="to">&#160;&#160;control_port_clock_connection</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">clk&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;pcs_mac_rx_clock_connection</td>
      </tr>
      <tr>
       <td></td>
@@ -3922,7 +3932,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_clk_0">clk_0</a>
       </td>
       <td class="from">clk&#160;&#160;</td>
-      <td class="main" rowspan="8">pll_0</td>
+      <td class="main" rowspan="6">pll_0</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;refclk</td>
@@ -3937,19 +3947,9 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="from">outclk0&#160;&#160;</td>
-      <td class="neighbor" rowspan="4">
+      <td class="neighbor" rowspan="2">
        <a href="#module_TSE_MAC">TSE_MAC</a>
       </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;pcs_mac_rx_clock_connection</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">outclk0&#160;&#160;</td>
      </tr>
      <tr>
       <td></td>
@@ -5875,7 +5875,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   <table class="blueBar">
    <tr>
     <td class="l">generation took 0.01 seconds</td>
-    <td class="r">rendering took 0.12 seconds</td>
+    <td class="r">rendering took 0.11 seconds</td>
    </tr>
   </table>
  </body>

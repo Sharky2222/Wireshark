@@ -1,0 +1,17 @@
+14:32:41 **** Build of configuration Nios II for project Trial2 ****
+make all 
+Info: Building ../Trial2_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Trial2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Trial2_bsp//drivers/inc -I../Trial2_bsp//HAL/inc -I../Trial2_bsp/ -I../Trial2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALTERA_TRIPLE_SPEED_MAC -DALT_SINGLE_THREADED -DALTERA_AUTONEG_TIMEOUT_THRESHOLD=2500 -DALTERA_CHECKLINK_TIMEOUT_THRESHOLD=10000 -DALTERA_NOMDIO_TIMEOUT_THRESHOLD=1000000    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking Trial2.elf
+nios2-elf-g++  -T'../Trial2_bsp//linker.x' -msys-crt0='../Trial2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Trial2_bsp/   -Wl,-Map=Trial2.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o Trial2.elf obj/default/hello_world.o -lm -msys-lib=m
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: Trial2.elf section `.text' will not fit in region `onchip_memory_nios'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0xc05c of Trial2.elf section `.rwdata' is not within region `onchip_memory_nios'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0xdc84 of Trial2.elf section `.bss' is not within region `onchip_memory_nios'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0xc05c of Trial2.elf section `.rwdata' is not within region `onchip_memory_nios'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0xdc84 of Trial2.elf section `.bss' is not within region `onchip_memory_nios'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: region `onchip_memory_nios' overflowed by 23684 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [Trial2.elf] Error 1

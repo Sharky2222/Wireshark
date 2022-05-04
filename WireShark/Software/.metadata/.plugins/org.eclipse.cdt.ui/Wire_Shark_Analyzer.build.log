@@ -1,102 +1,20 @@
-23:49:57 **** Incremental Build of configuration Nios II for project Wire_Shark_Analyzer ****
+23:31:01 **** Build of configuration Nios II for project Wire_Shark_Analyzer ****
 make all 
 Info: Building ../Wire_Shark_Analyzer_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Wire_Shark_Analyzer_bsp/
 [BSP build complete]
-Info: Compiling Packet_Analyzer.c to obj/default/Packet_Analyzer.o
-nios2-elf-gcc -xc -MP -MMD -c -I../Wire_Shark_Analyzer_bsp//drivers/inc -I../Wire_Shark_Analyzer_bsp//HAL/inc -I../Wire_Shark_Analyzer_bsp/ -I../Wire_Shark_Analyzer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALTERA_TRIPLE_SPEED_MAC -DALT_SINGLE_THREADED -DALTERA_AUTONEG_TIMEOUT_THRESHOLD=2500 -DALTERA_CHECKLINK_TIMEOUT_THRESHOLD=10000 -DALTERA_NOMDIO_TIMEOUT_THRESHOLD=1000000    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/Packet_Analyzer.o Packet_Analyzer.c
-In file included from Packet_Analyzer.c:7:0:
-Packet_Analyzer.c:10:37: error: 'TSE_MAC_BASE' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                     ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:43:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     tse_name##_BASE + offset,             \
-     ^
-Packet_Analyzer.c:10:37: error: 'TSE_MAC_TRANSMIT_FIFO_DEPTH' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                     ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:44:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     tse_name##_TRANSMIT_FIFO_DEPTH,       \
-     ^
-Packet_Analyzer.c:10:37: error: 'TSE_MAC_RECEIVE_FIFO_DEPTH' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                     ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:45:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     tse_name##_RECEIVE_FIFO_DEPTH,        \
-     ^
-Packet_Analyzer.c:10:37: error: 'TSE_MAC_USE_MDIO' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                     ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:46:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     tse_name##_USE_MDIO,                  \
-     ^
-Packet_Analyzer.c:10:37: error: 'TSE_MAC_ENABLE_MACLITE' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                     ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:47:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     tse_name##_ENABLE_MACLITE,            \
-     ^
-Packet_Analyzer.c:10:37: error: 'TSE_MAC_MACLITE_GIGE' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                     ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:48:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     tse_name##_MACLITE_GIGE,              \
-     ^
-Packet_Analyzer.c:10:37: error: 'TSE_MAC_IS_MULTICHANNEL_MAC' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                     ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:49:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     tse_name##_IS_MULTICHANNEL_MAC,       \
-     ^
-Packet_Analyzer.c:10:37: error: 'TSE_MAC_NUMBER_OF_CHANNEL' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                     ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:50:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     tse_name##_NUMBER_OF_CHANNEL,         \
-     ^
-Packet_Analyzer.c:10:37: error: 'TSE_MAC_MDIO_SHARED' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                     ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:51:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     tse_name##_MDIO_SHARED,               \
-     ^
-Packet_Analyzer.c:10:37: error: 'TSE_MAC_NUMBER_OF_MAC_MDIO_SHARED' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                     ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:52:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     tse_name##_NUMBER_OF_MAC_MDIO_SHARED, \
-     ^
-Packet_Analyzer.c:10:37: error: 'TSE_MAC_PCS' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                     ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:53:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     tse_name##_PCS,                       \
-     ^
-Packet_Analyzer.c:10:37: error: 'TSE_MAC_PCS_SGMII' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                     ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:54:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     tse_name##_PCS_SGMII,                 \
-     ^
-Packet_Analyzer.c:10:49: error: 'SGDMA_TX_CSR_NAME' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                                 ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:55:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     msgdma_tx_name##_CSR_NAME,            \
-     ^
-Packet_Analyzer.c:10:59: error: 'SGDMA_RX_CSR_NAME' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                                           ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:56:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     msgdma_rx_name##_CSR_NAME,            \
-     ^
-Packet_Analyzer.c:10:59: error: 'SGDMA_RX_CSR_IRQ' undeclared here (not in a function)
-   TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(TSE_MAC, 0, SGDMA_TX, SGDMA_RX, TSE_PHY_AUTO_ADDRESS, &marvell_cfg_rgmii, DESCRIPTOR_MEMORY)
-                                                           ^
-../Wire_Shark_Analyzer_bsp//drivers/inc/altera_avalon_tse_system_info.h:57:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
-     msgdma_rx_name##_CSR_IRQ,             \
-     ^
-make: *** [obj/default/Packet_Analyzer.o] Error 1
+Info: Compiling packetAnalyzer.c to obj/default/packetAnalyzer.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Wire_Shark_Analyzer_bsp//drivers/inc -I../Wire_Shark_Analyzer_bsp//HAL/inc -I../Wire_Shark_Analyzer_bsp/ -I../Wire_Shark_Analyzer_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALTERA_TRIPLE_SPEED_MAC -DALT_SINGLE_THREADED -DALTERA_AUTONEG_TIMEOUT_THRESHOLD=2500 -DALTERA_CHECKLINK_TIMEOUT_THRESHOLD=10000 -DALTERA_NOMDIO_TIMEOUT_THRESHOLD=1000000    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/packetAnalyzer.o packetAnalyzer.c
+Info: Linking Wire_Shark_Analyzer.elf
+nios2-elf-g++  -T'../Wire_Shark_Analyzer_bsp//linker.x' -msys-crt0='../Wire_Shark_Analyzer_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Wire_Shark_Analyzer_bsp/   -Wl,-Map=Wire_Shark_Analyzer.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o Wire_Shark_Analyzer.elf obj/default/packetAnalyzer.o -lm -msys-lib=m
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: Wire_Shark_Analyzer.elf section `.text' will not fit in region `onchip_memory_nios'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0xc05c of Wire_Shark_Analyzer.elf section `.rwdata' is not within region `onchip_memory_nios'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0xdc84 of Wire_Shark_Analyzer.elf section `.bss' is not within region `onchip_memory_nios'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0xc05c of Wire_Shark_Analyzer.elf section `.rwdata' is not within region `onchip_memory_nios'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0xdc84 of Wire_Shark_Analyzer.elf section `.bss' is not within region `onchip_memory_nios'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: region `onchip_memory_nios' overflowed by 23684 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [Wire_Shark_Analyzer.elf] Error 1
 
-23:49:58 Build Finished (took 1s.461ms)
+23:31:03 Build Finished (took 1s.864ms)
 

@@ -120,8 +120,8 @@ end entity;
 architecture rtl of WireShark is
 
 -- declare --
-signal CONNECTED_TO_eth_tse_0_mac_status_connection_eth_mode : std_logic;
-signal CONNECTED_TO_eth_tse_0_mac_status_connection_ena_10 : std_logic;
+signal CONNECTED_TO_eth_tse_0_mac_status_connection_eth_mode : std_logic; --not used
+signal CONNECTED_TO_eth_tse_0_mac_status_connection_ena_10 : std_logic;	--not used
 signal mdio_in : std_logic;
 signal mdio_oen : std_logic;
 signal mdio_out : std_logic;
@@ -140,8 +140,7 @@ signal mdio_out : std_logic;
             eth_tse_0_mac_status_connection_set_10    : in  std_logic                    := 'X';             -- set_10
             eth_tse_0_mac_status_connection_set_1000  : in  std_logic                    := 'X';             -- set_1000
             eth_tse_0_mac_status_connection_eth_mode  : out std_logic;                                       -- eth_mode
-            eth_tse_0_mac_status_connection_ena_10    : out std_logic;                                       -- ena_10
-            eth_tse_0_pcs_mac_rx_clock_connection_clk : in  std_logic                    := 'X'              -- clk
+            eth_tse_0_mac_status_connection_ena_10    : out std_logic                                       -- ena_10
         );
     end component Wire_Shark;
 
@@ -165,8 +164,7 @@ begin
             eth_tse_0_mac_status_connection_set_10    => '0',    --       eth_tse_0_mac_status_connection.set_10
             eth_tse_0_mac_status_connection_set_1000  => '1',  --                                      .set_1000
             eth_tse_0_mac_status_connection_eth_mode  => CONNECTED_TO_eth_tse_0_mac_status_connection_eth_mode,  --                                      .eth_mode
-            eth_tse_0_mac_status_connection_ena_10    => CONNECTED_TO_eth_tse_0_mac_status_connection_ena_10,    --                                      .ena_10
-            eth_tse_0_pcs_mac_rx_clock_connection_clk => HPS_ENET_RX_CLK -- eth_tse_0_pcs_mac_rx_clock_connection.clk
+            eth_tse_0_mac_status_connection_ena_10    => CONNECTED_TO_eth_tse_0_mac_status_connection_ena_10    --                                      .ena_10
         );
 
 

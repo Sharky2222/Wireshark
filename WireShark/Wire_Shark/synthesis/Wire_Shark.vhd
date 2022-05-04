@@ -640,7 +640,7 @@ architecture rtl of Wire_Shark is
 	signal sgdma_tx_out_endofpacket                                 : std_logic;                     -- SGDMA_TX:out_endofpacket -> TSE_MAC:ff_tx_eop
 	signal sgdma_tx_out_error                                       : std_logic;                     -- SGDMA_TX:out_error -> TSE_MAC:ff_tx_err
 	signal sgdma_tx_out_empty                                       : std_logic_vector(1 downto 0);  -- SGDMA_TX:out_empty -> TSE_MAC:ff_tx_mod
-	signal pll_0_outclk0_clk                                        : std_logic;                     -- pll_0:outclk_0 -> [TSE_MAC:rx_clk, TSE_MAC:tx_clk]
+	signal pll_0_outclk0_clk                                        : std_logic;                     -- pll_0:outclk_0 -> TSE_MAC:tx_clk
 	signal nios2e_debug_reset_request_reset                         : std_logic;                     -- nios2e:debug_reset_request -> [pll_0:rst, rst_controller:reset_in0, rst_controller:reset_in1, rst_controller_001:reset_in0]
 	signal nios2e_data_master_readdata                              : std_logic_vector(31 downto 0); -- mm_interconnect_0:nios2e_data_master_readdata -> nios2e:d_readdata
 	signal nios2e_data_master_waitrequest                           : std_logic;                     -- mm_interconnect_0:nios2e_data_master_waitrequest -> nios2e:d_waitrequest
@@ -879,7 +879,7 @@ begin
 			reg_wr        => mm_interconnect_0_tse_mac_control_port_write,       --                              .write
 			reg_busy      => mm_interconnect_0_tse_mac_control_port_waitrequest, --                              .waitrequest
 			tx_clk        => pll_0_outclk0_clk,                                  --   pcs_mac_tx_clock_connection.clk
-			rx_clk        => pll_0_outclk0_clk,                                  --   pcs_mac_rx_clock_connection.clk
+			rx_clk        => clk_clk,                                            --   pcs_mac_rx_clock_connection.clk
 			set_10        => eth_tse_0_mac_status_connection_set_10,             --         mac_status_connection.set_10
 			set_1000      => eth_tse_0_mac_status_connection_set_1000,           --                              .set_1000
 			eth_mode      => eth_tse_0_mac_status_connection_eth_mode,           --                              .eth_mode

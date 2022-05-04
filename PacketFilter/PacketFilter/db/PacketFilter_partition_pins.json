@@ -1,0 +1,309 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "outData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[5]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[7]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[8]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[9]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[10]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[11]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[12]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[13]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[14]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[15]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[16]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[17]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[18]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[19]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[20]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[21]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[22]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[23]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[24]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[25]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[26]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[27]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[28]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[29]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[30]",
+					"strict" : false
+				},
+				{
+					"name" : "outData[31]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "startofpacket",
+					"strict" : false
+				},
+				{
+					"name" : "address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "address[3]",
+					"strict" : false
+				},
+				{
+					"name" : "address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "writeTo",
+					"strict" : false
+				},
+				{
+					"name" : "chipSelect",
+					"strict" : false
+				},
+				{
+					"name" : "ReadTo",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[4]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[5]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[6]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[7]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[8]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[9]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[10]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[11]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[12]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[13]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[14]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[15]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[16]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[17]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[18]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[19]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[20]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[21]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[22]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[23]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[24]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[25]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[26]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[27]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[28]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[29]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[30]",
+					"strict" : false
+				},
+				{
+					"name" : "avsChannel[31]",
+					"strict" : false
+				},
+				{
+					"name" : "cycle",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

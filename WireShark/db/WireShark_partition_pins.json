@@ -14,10 +14,6 @@
 				{
 					"name" : "CLOCK2_50",
 					"strict" : false
-				},
-				{
-					"name" : "HPS_ENET_RX_CLK",
-					"strict" : false
 				}
 			]
 		}

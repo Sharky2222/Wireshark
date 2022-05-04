@@ -970,6 +970,11 @@
    kind="clock"
    version="18.1"
    start="clk_0.clk"
+   end="TSE_MAC.pcs_mac_rx_clock_connection" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_0.clk"
    end="TSE_MAC.receive_clock_connection" />
  <connection kind="clock" version="18.1" start="clk_0.clk" end="pll_0.refclk" />
  <connection
@@ -977,11 +982,6 @@
    version="18.1"
    start="clk_0.clk"
    end="TSE_MAC.transmit_clock_connection" />
- <connection
-   kind="clock"
-   version="18.1"
-   start="pll_0.outclk0"
-   end="TSE_MAC.pcs_mac_rx_clock_connection" />
  <connection
    kind="clock"
    version="18.1"

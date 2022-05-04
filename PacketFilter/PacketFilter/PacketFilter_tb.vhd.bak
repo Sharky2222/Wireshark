@@ -1,0 +1,45 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity PacketFilter_tb is
+end PacketFilter_tb;
+
+architecture tb of PacketFilter_tb is
+	
+	--Avalon MM interface
+	signal clock : std_logic :=  '0';
+	signal reset : std_logic :=  '0';
+	signal address : std_logic_vector(3 downto 0);
+	signal chipSelect : std_logic :=  '1';
+	signal inData : std_logic_vector(31 downto 0);
+	signal outData : std_logic_vector(31 downto 0);
+	signal writeTo : std_logic :=  '1';
+	signal ReadTo : std_logic :=  '1';
+	
+	--Avalon Streaming interface
+	signal avsChannel : std_logic_vector(31 downto 0);
+	signal endofpacket : std_logic :=  '0';
+	signal startofpacket : std_logic :=  '0';
+	
+begin
+	clock <= not clock after 2 ns;	
+	
+	process
+	begin
+		
+		--inData <= x"12300000";
+	
+	end process;
+	
+	uut : entity work.PacketFilter
+	port map (
+	clock => clock, reset => reset,
+	address => address, chipSelect => chipSelect,
+	inData => inData, outData => outData,
+	writeTo => writeTo, ReadTo => ReadTo,
+	avsChannel => avsChannel, endofpacket => endofpacket,
+	startofpacket => startofpacket
+	
+	);
+end tb;
